@@ -1,13 +1,19 @@
-let a = +prompt ('Введите А')
-let b = +prompt ('Введите В')
-let res 
+let money = +prompt("Ваш бюджет на месяц?");
+let time = +prompt("Введите дату в формате YYYY-MM-DD");
 
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
+}
 
-if (a < 0 && b < 0) {
-alert('Результат операции равен ' + (res = a * b))
-} else if (a > 0 && b > 0) {
-alert('Результат операции равен '+ (res = a / b))
-    }
-    else if (a > 0 && b < 0 || a < 0 && b > 0) {
-        alert('Результат операции равен ' + (res = a + b))
-        }
+let expenditure = +prompt("Введите обязательную статью расходов в этом месяце");
+let consumption = +prompt("Во сколько обойдется?");
+obj = {
+    expenditure: "consumption"
+}
+
+let budgetOneDay = alert("Ваш бюджет на один месяц " + ((money - consumption) / 30));
