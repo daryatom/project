@@ -16,4 +16,4 @@ obj = {
     expenditure: "consumption"
 }
 
-let budgetOneDay = alert("Ваш бюджет на один месяц " + ((money - consumption) / 30));
+let budgetOneDay = alert("Ваш бюджет на один день " + ((money - consumption) / 30));
